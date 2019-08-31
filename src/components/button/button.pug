@@ -1,0 +1,16 @@
+mixin button(title,url)
+    if url
+        if title[1]
+            a.button(href=url)&attributes(attributes)            
+                span.button__subtitle=title[0]
+                span.button__title=title[1]
+        else
+            a.button(href=url)&attributes(attributes)=title 
+
+    else
+        if title[1]
+            button.button            
+                span.button__subtitle=title[0]
+                span.button__title=title[1]
+        else
+            button.button=title

@@ -3,3 +3,10 @@
 @import "utils/fonts.scss";
 @import "utils/libs.scss";
 @import "utils/reset.scss";
+// @import "../components/button/button.scss";
+@import "../blocks/header/header.scss";
+
+html{
+    font-size:$mainFontSize;
+    font-family: $mainFont;
+}

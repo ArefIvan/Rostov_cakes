@@ -1,0 +1,28 @@
+.button{
+
+    display:inline-flex;
+    flex-direction: column;
+    height: rem(45);
+    justify-content: center;
+    vertical-align: top;
+    text-align: center;
+    align-items: center;
+    font-family: inherit;
+    text-decoration: none;
+    color:inherit;
+    cursor: pointer;
+    font-size: rem(16);
+    padding: rem(10);
+    border: rem(2) solid $primary-color;
+    border-radius: rem(25) 0 rem(20) 0;
+    &__subtitle{
+        font-size:rem(12);
+    align-self: flex-end;
+    }
+    &:focus,&:hover{
+        background-color:$primary-color--25;
+    }
+    &:active{
+        background-color: $primary-color--75;
+    }
+}

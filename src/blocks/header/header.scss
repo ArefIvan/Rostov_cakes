@@ -1,0 +1,19 @@
+@import "../components/button/button.scss";
+
+.header{
+    min-width: rem(100);
+    display:flex;
+    // grid-template-rows: rem(40) auto;
+    // grid-template-columns: repeat(25%);
+    &__logo{
+        font-family: $headersFont;
+        user-select: none;
+        &__name{
+            font-size: rem(40);
+        }
+        &__subname{
+            line-height: 30%;
+            text-align: right;
+        }
+    }
+}

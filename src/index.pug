@@ -1,10 +1,16 @@
 include blocks/slide/slide
+include blocks/advantage/advantage
 -let slideImgMain=require("./img/slader/slade_main.jpg")
 -let slideImg1=require("./img/slader/slade_1.jpg")
 -let slideImg2=require("./img/slader/slade_2_1.jpg")
 -let slideImg3=require("./img/slader/slade_3.jpg")
 -let slideImg4=require("./img/slader/slade_4.jpg")
 -let slideImg5=require("./img/slader/slade_5.jpg")
+-let basket = require("./img/advantage/basket.svg")
+-let artist = require("./img/advantage/artist.svg")
+-let scroll = require("./img/advantage/scroll.svg")
+-let meal = require("./img/advantage/meal.svg")
+
 
 
 <!DOCTYPE html>
@@ -24,3 +30,19 @@ html(lang="ru")
                 +slide([slideImg3,"Мужской торт"],["нежные текстуры","Лаконичный декор","для самых","мужественных"],false,[["Заказать:","89286217794"],"tel:+79286217794"])
                 +slide([slideImg4,"Женский торт"],["всё","только","для нее"],false,[["Заказать:","89286217794"],"tel:+79286217794"])
                 +slide([slideImg5,"Шоколадная открытка"],["Шоколадные открытки","ручной работы"],false,[["Заказать:","89286217794"],"tel:+79286217794"])
+            section.advantages
+                h2.h2.advantages__title Почему вы захотите приобрести наш торт:
+                +advantage(basket,"Состав",["Натуральные продукты премиум класса",
+								            "Бельгийский шоколад",
+								            "Свежие сливки",
+								            "Фруктовые пюре мгновенной пастеризации",
+								            "Сублимированные ягоды"])
+                +advantage(artist,"Дизайн",["Живые цветы",
+                                             "Шоколадные открытки и фигурки ручной работы",
+                                             "Тематический декор"])
+                +advantage(scroll,"Рецепты",["Лучшие рецептуры европейских кондитеров",
+                                             "Самые интересные сочетания вкусов",
+                                             "Начинки на самый изысканый вкус"])
+                +advantage(meal,"Сервис",["Стильная Эко-упаковка",
+                                             "Бесплатная доставка прямо в руки",
+                                             "Экспресс торт за 8 часов"])

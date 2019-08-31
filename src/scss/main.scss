@@ -6,11 +6,22 @@
 // @import "../components/button/button.scss";
 @import "../blocks/header/header.scss";
 @import "../blocks/slide/slide.scss";
+@import "../blocks/advantage/advantage.scss";
 
 
 html{
     font-size:$mainFontSize;
     font-family: $mainFont;
+}
+.wrapper{
+    max-width:1200px;
+    margin: 0 auto;
+}
+.h2{
+    font-family: $headersFont;
+    text-align: center;
+    font-size:rem(20);
+    text-transform: uppercase;
 }
 .slider--main{
     margin: rem(50) 0;
@@ -26,6 +37,25 @@ html{
             padding: 0 20px;
             
         }
+        @media screen and (max-width:$tableWidth){
+            top:100px;
+        }
     }
 
 } 
+.advantages{
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width:$tableWidth){
+        display: block;
+    }
+    .h2{			
+        width:100%;      
+    }
+    .advantage{
+        flex-basis: calc(50% - #{rem(40)});
+
+        
+        margin: rem(20);
+    }
+}

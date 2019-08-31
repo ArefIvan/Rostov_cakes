@@ -13,7 +13,6 @@
         width: 50%;
         &__items{
             display: flex;
-            // justify-content: flex-end;
 
         }
         &__link{
@@ -30,15 +29,13 @@
 
     }
     &__logo{
-        // width: 50%;
-        font-family: $headersFont;
+        font-family: $logoFont;
         user-select: none;
         &__name{
             font-size: rem(40);
         }
         &__subname{
             margin-top: rem(-14);
-            // line-height: rem(10);
             text-align: right;
         }
     }

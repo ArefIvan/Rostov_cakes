@@ -1,0 +1,10 @@
+mixin advantage(img,title,items )
+    -let alt = img.split("/")[4].split(".")[0]
+    .advantage
+        .advantage__img
+            img(src=img, alt=alt)
+        h3.advantage__title=title
+        .advantage__content
+            ul.advantage__content__items
+                each val in items
+                    li.advantage__content__item=val

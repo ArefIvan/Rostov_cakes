@@ -1,0 +1,15 @@
+include ../../components/button/button
+mixin slide(img,title,description,button)
+    .slide
+        .slide__img
+            img(src=img[0], alt=img[1])
+        .slide__text
+            .slide__title
+                each val in title
+                    p.slide__title__item=val
+            if description
+                .slide__description
+                    each val in description
+                        p.slide__description__item=val
+            if button
+                +button(button[0],button[1])

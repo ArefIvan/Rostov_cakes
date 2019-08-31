@@ -5,8 +5,27 @@
 @import "utils/reset.scss";
 // @import "../components/button/button.scss";
 @import "../blocks/header/header.scss";
+@import "../blocks/slide/slide.scss";
+
 
 html{
     font-size:$mainFontSize;
     font-family: $mainFont;
 }
+.slider--main{
+    margin: rem(50) 0;
+    .owl-nav{
+        font-size: rem(40);
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+        top:calc(50% - 1.5rem);
+            span{
+            padding: 0 20px;
+            
+        }
+    }
+
+} 

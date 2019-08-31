@@ -1,4 +1,12 @@
-include components/button/button
+include blocks/slide/slide
+-let slideImgMain=require("./img/slader/slade_main.jpg")
+-let slideImg1=require("./img/slader/slade_1.jpg")
+-let slideImg2=require("./img/slader/slade_2_1.jpg")
+-let slideImg3=require("./img/slader/slade_3.jpg")
+-let slideImg4=require("./img/slader/slade_4.jpg")
+-let slideImg5=require("./img/slader/slade_5.jpg")
+
+
 <!DOCTYPE html>
 html(lang="ru")
     head
@@ -9,3 +17,10 @@ html(lang="ru")
     body 
         .wrapper
             include blocks/header/header
+            .slider.slider--main.owl-carousel
+                +slide([slideImgMain,"Муссовый торт"],["Муссовые торты","Ростов-на-Дону"],["Индивидуальный декор","Стильная упаковка","Бережная доставка","2000р/кг"],[["Заказать:","89286217794"],"tel:+79286217794"])
+                +slide([slideImg1,"Свадебный торт"],["Прекрасный","Бесконечно","вкусный","Свадебный торт","Твоей Мечты"],false,[["ПОДРОБНЕЕ"],"wedding.html"])
+                +slide([slideImg2,"Детский торт"],["С заботой","О самых","Маленьких"],false,[["Заказать:","89286217794"],"tel:+79286217794"])
+                +slide([slideImg3,"Мужской торт"],["нежные текстуры","Лаконичный декор","для самых","мужественных"],false,[["Заказать:","89286217794"],"tel:+79286217794"])
+                +slide([slideImg4,"Женский торт"],["всё","только","для нее"],false,[["Заказать:","89286217794"],"tel:+79286217794"])
+                +slide([slideImg5,"Шоколадная открытка"],["Шоколадные открытки","ручной работы"],false,[["Заказать:","89286217794"],"tel:+79286217794"])

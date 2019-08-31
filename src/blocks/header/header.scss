@@ -1,19 +1,98 @@
 @import "../components/button/button.scss";
 
 .header{
-    min-width: rem(100);
+    min-width: rem(80);
     display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     // grid-template-rows: rem(40) auto;
     // grid-template-columns: repeat(25%);
+    margin:0 rem(50);
+
+    &__nav{
+        width: 50%;
+        &__items{
+            display: flex;
+            // justify-content: flex-end;
+
+        }
+        &__link{
+            display: block;
+            padding:rem(15) rem(10) 0;
+            text-transform: uppercase;
+            &:focus,&:hover{
+                background-color:$primary-color--25;
+            }
+            &:active{
+                background-color: $primary-color--75;
+            }
+        }
+
+    }
     &__logo{
+        // width: 50%;
         font-family: $headersFont;
         user-select: none;
         &__name{
             font-size: rem(40);
         }
         &__subname{
-            line-height: 30%;
+            margin-top: rem(-14);
+            // line-height: rem(10);
             text-align: right;
         }
     }
+    &__social{
+        width: 50%;
+        &__items{
+            display: flex;
+            justify-content: flex-end;
+            }
+        &__item{
+            padding:rem(15) rem(10) 0;
+
+        }
+        &__link{
+            
+            display: inline-block;
+            @include size(rem(25));
+            position: relative;
+            &:hover .header__social__img--hover{
+                display: block;
+
+            }
+            &:focus .header__social__img--hover{
+                display: block;
+
+            }
+            &:hover .header__social__img--visible{
+                display: none;
+
+            }
+            &:focus .header__social__img--visible{
+                display: none;
+
+            }
+        }
+        &__img{
+            @include size(100%);
+            position: absolute;
+            top:0;
+            left:0;
+            &--hover{
+                display: none;
+            }
+        }
+    }
+    .button{
+        align-self: center;
+        // justify-self: end;
+        font-size: rem(18);
+        &__subtitle{
+            font-size:rem(14);
+        }
+    }
+        
+
+    
 }

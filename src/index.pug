@@ -1,5 +1,7 @@
 include blocks/slide/slide
 include blocks/advantage/advantage
+include blocks/faq/faq
+
 -let slideImgMain=require("./img/slader/slade_main.jpg")
 -let slideImg1=require("./img/slader/slade_1.jpg")
 -let slideImg2=require("./img/slader/slade_2_1.jpg")
@@ -10,6 +12,7 @@ include blocks/advantage/advantage
 -let artist = require("./img/advantage/artist.svg")
 -let scroll = require("./img/advantage/scroll.svg")
 -let meal = require("./img/advantage/meal.svg")
+-let faq = require("./data/data.json").faq
 
 
 
@@ -19,7 +22,7 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
+        title Муссовые торты от "Alice's Wonder Cakes"
     body 
         .wrapper
             include blocks/header/header
@@ -44,5 +47,13 @@ html(lang="ru")
                                              "Самые интересные сочетания вкусов",
                                              "Начинки на самый изысканый вкус"])
                 +advantage(meal,"Сервис",["Стильная Эко-упаковка",
-                                             "Бесплатная доставка прямо в руки",
-                                             "Экспресс торт за 8 часов"])
+                                          "Бесплатная доставка прямо в руки",
+                                          "Экспресс торт за 8 часов"])
+            section.widget
+                h2.h2
+                    a(target="_blank" title="Профиль в Instagram" href="https://www.instagram.com/polina_arefieva/").widget__link  Мы в Instagram
+                .widget__content#instafeed
+            section.faq#faq
+                each val in faq
+                    +faq(val.question,val.answer)
+

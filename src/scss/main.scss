@@ -7,7 +7,7 @@
 @import "../blocks/header/header.scss";
 @import "../blocks/slide/slide.scss";
 @import "../blocks/advantage/advantage.scss";
-
+@import "../blocks/faq/faq.scss";
 
 html{
     font-size:$mainFontSize;
@@ -23,6 +23,11 @@ html{
     font-size:rem(20);
     text-transform: uppercase;
 }
+.h3{
+    font-family: $headersFont;
+    text-align: center;
+    font-size: rem(20);
+}
 .slider--main{
     margin: rem(50) 0;
     .owl-nav{
@@ -31,12 +36,15 @@ html{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        
         top:calc(50% - 1.5rem);
             span{
             padding: 0 20px;
-            
+         }
+         button{
+         &:hover,&:focus{
+            outline: 1px solid #{$primary-color};
         }
+    }
         @media screen and (max-width:$tableWidth){
             top:100px;
         }
@@ -53,9 +61,43 @@ html{
         width:100%;      
     }
     .advantage{
-        flex-basis: calc(50% - #{rem(40)});
-
-        
+        flex-basis: calc(50% - #{rem(40)});      
         margin: rem(20);
+    }
+
+}
+.widget{
+    max-width: rem(900);
+    margin: 0 auto rem(50);
+    &__content{
+        border:1px solid #{$primary-color};
+        margin:rem(20) auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__link{
+        @include size(100%);
+        color:inherit;
+        &:hover,&:focus{
+            outline: 1px solid #{$primary-color};
+        }
+    }
+    &__img{
+        width: 12%;
+        margin:rem(10) rem(20);
+        a{
+            &:hover img,&:focus img{
+                border: 1px solid black;
+            }
+         }
+        img{
+            padding:rem(2);
+            margin: 0 auto;
+            border:1px solid #{$primary-color};
+        }
+        @media screen and (max-width:$tableWidth) {
+            flex-basis: 28%;
+        }
     }
 }

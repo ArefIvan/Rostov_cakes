@@ -1,6 +1,7 @@
 .advantage{
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     @media screen and (max-width:$tableWidth){
         justify-content: center;
      }
@@ -9,6 +10,7 @@
     }
     &__title{
         width: calc(100%-#{rem(64)});
+        height: rem(64);
         font-family: $headersFont;
         font-size: rem(21);
         font-weight: 300;

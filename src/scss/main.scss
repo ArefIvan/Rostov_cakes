@@ -8,6 +8,7 @@
 @import "../blocks/slide/slide.scss";
 @import "../blocks/advantage/advantage.scss";
 @import "../blocks/faq/faq.scss";
+@import "../blocks/tasteCard/tasteCard.scss";
 
 html{
     font-size:$mainFontSize;
@@ -99,5 +100,15 @@ html{
         @media screen and (max-width:$tableWidth) {
             flex-basis: 28%;
         }
+    }
+}
+.tastes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: rem(50);
+    .h2{
+        width: 100%;
+
     }
 }

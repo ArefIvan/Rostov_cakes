@@ -1,0 +1,52 @@
+.tasteCard{
+    @include size(rem(350));
+    position: relative;
+    margin: rem(5);
+    overflow: hidden;
+
+    
+        &__dscr{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: space-between;
+            @include size(100%);
+            position: absolute;
+            top:-100%;
+            right: 0;
+            z-index: 2;
+            background-color:rgba($color: #ffffff, $alpha: .7);
+            // transform: translateY(-100%);
+            transition: top 2s;
+            
+        }
+        &__name{
+            margin-top:rem(30);
+        }
+        &__ingredients{
+            margin: rem(50) rem(40);
+            text-align: center;
+            &__item{
+                font-size: rem(16);
+                margin-top: rem(15);
+            }
+        }
+
+        &__arrow{
+            position: absolute;
+            top:0;
+            right: 0;
+            line-height: 1em;
+            z-index:4;
+            transition: transform 2s;
+            margin: rem(2);
+            padding: rem(3);
+            background-color:inherit;
+
+
+            &:hover,&:focus{
+                outline: 1px solid #{$primary-color};
+            }
+        }
+}

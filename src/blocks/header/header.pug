@@ -1,13 +1,28 @@
 include ../../components/button/button.pug
--let whatsapp = require("./img/svg/whatsapp.svg");
--let whatsappGrey = require("./img/svg/whatsapp-grey.svg"); 
--let vk = require("./img/svg/vk.svg");
--let vkGrey = require("./img/svg/vk-grey.svg"); 
--let instagram= require("./img/svg/instagram.svg"); 
--let instagramGrey= require("./img/svg/instagram-grey.svg"); 
+-let whatsapp = "./assets/img/svg/whatsapp.svg"
+-let whatsappGrey = "./assets/img/svg/whatsapp-grey.svg"; 
+-let vk = "/assets/img/svg/vk.svg";
+-let vkGrey = "/assets/img/svg/vk-grey.svg"; 
+-let instagram= "/assets/img/svg/instagram.svg"; 
+-let instagramGrey= "/assets/img/svg/instagram-grey.svg"; 
 
 
 header.header
+    .header__phonemenu
+        //- input.header__phonemenu__input#menu(type="checkbox", name="menu")       
+        button.header__phonemenu__gamb
+            span.header__phonemenu__gamb__item
+        nav.header__phonemenu__nav
+            button.header__phonemenu__nav__close
+                label(for="menu") x
+            ul.header__phonemenu__nav__items
+                li.header__phonemenu__nav__item
+                    a(href="").header__phonemenu__nav__link Вкусы
+                li.header__phonemenu__nav__item
+                    a(href="").header__phonemenu__nav__link Вопросы-ответы
+                li.header__phonemenu__nav__item
+                    a(href="").header__phonemenu__nav__link Отзывы
+                    
     nav.header__nav
         ul.header__nav__items
             li.header__nav__item

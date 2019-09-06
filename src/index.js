@@ -3,7 +3,9 @@ import $ from "jquery";
 import "owl.carousel";
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import Instafeed from "instafeed.js";
+import "./blocks/header/header"
 import "./blocks/faq/faq"
+import "./blocks/tasteCard/tasteCard"
 let slider = $(".slider--main")
 slider.owlCarousel({
     items:1,

@@ -1,0 +1,11 @@
+mixin tasteCard(data,pathImg) 
+    -let img = pathImg+data.img
+    -let alt = data.img.split(".")[0]
+    .tasteCard
+        img(src=img, alt=alt).tasteCard__img 
+        button.tasteCard__arrow ↓      
+        .tasteCard__dscr           
+            h3.h3.tasteCard__name !{data.name}
+            ul.tasteCard__ingredients 
+                each val in data.ingredients
+                    li.tasteCard__ingredients__item !{val}

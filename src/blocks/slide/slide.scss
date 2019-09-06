@@ -1,7 +1,6 @@
 .slide{
     display: flex;
      justify-content: center;
-    //  max-height: 600px;
 
      @media screen and (max-width: $tableWidth){
          display: block;

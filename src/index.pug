@@ -1,7 +1,10 @@
 include blocks/slide/slide
 include blocks/advantage/advantage
 include blocks/faq/faq
-
+include blocks/tasteCard/tasteCard
+-let data = require("./data/data.json")
+-let cakes = data.cakes
+-let shoco = cakes.shoko
 -let slideImgMain=require("./img/slader/slade_main.jpg")
 -let slideImg1=require("./img/slader/slade_1.jpg")
 -let slideImg2=require("./img/slader/slade_2_1.jpg")
@@ -12,7 +15,12 @@ include blocks/faq/faq
 -let artist = require("./img/advantage/artist.svg")
 -let scroll = require("./img/advantage/scroll.svg")
 -let meal = require("./img/advantage/meal.svg")
--let faq = require("./data/data.json").faq
+-let pathImgTaste= "./assets/img/tastes/"
+-let faq = data.faq
+
+
+
+//- -let imgsTaste= getImgs(cakes)
 
 
 
@@ -26,6 +34,7 @@ html(lang="ru")
     body 
         .wrapper
             include blocks/header/header
+            //- div !{shoco1}
             .slider.slider--main.owl-carousel
                 +slide([slideImgMain,"Муссовый торт"],["Муссовые торты","Ростов-на-Дону"],["Индивидуальный декор","Стильная упаковка","Бережная доставка","2000р/кг"],[["Заказать:","89286217794"],"tel:+79286217794"])
                 +slide([slideImg1,"Свадебный торт"],["Прекрасный","Бесконечно","вкусный","Свадебный торт","Твоей Мечты"],false,[["ПОДРОБНЕЕ"],"wedding.html"])
@@ -54,6 +63,11 @@ html(lang="ru")
                     a(target="_blank" title="Профиль в Instagram" href="https://www.instagram.com/polina_arefieva/").widget__link  Мы в Instagram
                 .widget__content#instafeed
             section.faq#faq
+                h2.h2 Часто задаваемые вопросы
                 each val in faq
                     +faq(val.question,val.answer)
+            section.tastes
+                h2.h2 Наши вкусы
+                each val in cakes
+                    +tasteCard(val,pathImgTaste)
 

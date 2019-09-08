@@ -1,0 +1,18 @@
+include ../../components/button/button
+footer.footer
+    .footer__social
+        ul.footer__social__items
+            li.footer__social__item 
+                a(href="whatsapp://send?phone=+79286217794" title="Написать в WhatsApp").footer__social__link
+                    img(src=whatsapp alt="whatsapp-icon").footer__social__img--hover
+                    img(src=whatsappGrey alt="whatsapp-icon").footer__social__img--visible
+
+            li.footer__social__item 
+                a(target="_blank" rel="nofollow noopener noreferrer" title="Группа в VK" href="https://vk.com/aliceswondercakes").footer__social__link
+                    img(src=vk alt="vk-icon").footer__social__img.footer__social__img--hover
+                    img(src=vkGrey alt="vk-icon").footer__social__img--visible
+            li.footer__social__item 
+                a(target="_blank" rel="nofollow noopener noreferrer" title="Профиль в Instagram" href="https://www.instagram.com/polina_arefieva/").footer__social__link
+                    img(src=instagram alt="instagram-icon").footer__social__img.footer__social__img--hover
+                    img(src=instagramGrey alt="instagram-icon").footer__social__img--visible
+    +button(["Заказать:","89286217794"],"tel:+79286217794")

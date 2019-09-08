@@ -12,7 +12,7 @@ $(window).on("load",function(){
             let textPos = parseInt(text.css("top"))
             if(textPos<0){
                 text.css("top","0")
-                $(this).css("transform","rotate(180deg)")
+                $(this).css("transform","rotate(-180deg)")
             }else{
                 text.css("top","-100%")
                 $(this).css("transform","rotate(0)")

@@ -1,0 +1,51 @@
+.footer{
+    display: flex;
+    min-height: rem(100);
+    justify-content: space-between;
+    padding: rem(20);
+
+    &__social{
+        width: 50%;
+        &__items{
+            display: flex;
+            }
+        &__item{
+            padding:rem(15);
+
+        }
+        &__link{
+            
+            display: inline-block;
+            @include size(rem(25));
+            position: relative;
+            &:hover .footer__social__img--hover{
+                display: block;
+
+            }
+            &:focus .footer__social__img--hover{
+                display: block;
+
+            }
+            &:hover .footer__social__img--visible{
+                display: none;
+
+            }
+            &:focus .footer__social__img--visible{
+                display: none;
+
+            }
+        }
+        &__img{
+            @include size(100%);
+            position: absolute;
+            top:0;
+            left:0;
+            &--hover{
+                display: none;
+            }
+        }
+    }
+    .button{
+        margin-right: rem(50)
+    }
+}

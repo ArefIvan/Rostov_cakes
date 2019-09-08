@@ -8,27 +8,12 @@ include ../../components/button/button.pug
 
 
 header.header
-    .header__phonemenu
-        //- input.header__phonemenu__input#menu(type="checkbox", name="menu")       
-        button.header__phonemenu__gamb
-            span.header__phonemenu__gamb__item
-        nav.header__phonemenu__nav
-            button.header__phonemenu__nav__close
-                label(for="menu") x
-            ul.header__phonemenu__nav__items
-                li.header__phonemenu__nav__item
-                    a(href="").header__phonemenu__nav__link Вкусы
-                li.header__phonemenu__nav__item
-                    a(href="").header__phonemenu__nav__link Вопросы-ответы
-                li.header__phonemenu__nav__item
-                    a(href="").header__phonemenu__nav__link Отзывы
-                    
     nav.header__nav
         ul.header__nav__items
             li.header__nav__item
                 a(href="").header__nav__link Вкусы
             li.header__nav__item
-                a(href="").header__nav__link Вопросы-ответы
+                a(href="").header__nav__link Вопросы
             li.header__nav__item
                 a(href="").header__nav__link Отзывы
     .header__social
@@ -39,11 +24,11 @@ header.header
                     img(src=whatsappGrey alt="whatsapp-icon").header__social__img--visible
 
             li.header__social__item 
-                a(target="_blank" title="Группа в VK" href="https://vk.com/aliceswondercakes").header__social__link
+                a(target="_blank" rel="nofollow noopener noreferrer" title="Группа в VK" href="https://vk.com/aliceswondercakes").header__social__link
                     img(src=vk alt="vk-icon").header__social__img.header__social__img--hover
                     img(src=vkGrey alt="vk-icon").header__social__img--visible
             li.header__social__item 
-                a(target="_blank" title="Профиль в Instagram" href="https://www.instagram.com/polina_arefieva/").header__social__link
+                a(target="_blank" rel="nofollow noopener noreferrer" title="Профиль в Instagram" href="https://www.instagram.com/polina_arefieva/").header__social__link
                     img(src=instagram alt="instagram-icon").header__social__img.header__social__img--hover
                     img(src=instagramGrey alt="instagram-icon").header__social__img--visible
 

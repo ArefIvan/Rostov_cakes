@@ -130,6 +130,37 @@
             "description":""
         }
     }
+    ,
+    "design":[
+        {
+            "name":"Свадебные",
+            "link":"wedding",
+            "imgs":"7"
+        }
+        ,
+        {
+            "name":"Детские",
+            "link":"child",
+            "imgs":"23"
+        }
+        ,
+        {
+            "name":"Фигурки и открытки",
+            "link":"figure",
+            "imgs":"5"
+        }
+        ,
+        {
+            "name":"На любой праздник",
+            "link":"stand",
+            "imgs":"17"
+        }
+        ,
+        {
+            "name":"Акционные",
+            "link":"Action",
+            "imgs":"3"
+        }
 
-    
+    ]
 }

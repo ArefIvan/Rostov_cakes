@@ -1,0 +1,27 @@
+-let designItems = require("../../data/data.json").design
+section.design
+    .design__nav
+        each val,index in designItems
+            if index
+                a(href="#").design__nav__link=val.name
+            else
+                a(href="#").design__nav__link.is-active=val.name
+
+    each item,index in designItems
+        if index
+            .design__card
+                -let count=1
+                -let imgs = +(item.imgs)
+                while count<=imgs
+                    -let alt = item.link+count
+                    .design__card__img                   
+                        img(src="./assets/img/design/"+item.link+"/Img"+count+".jpg", alt=alt)
+                        -count++ 
+        else
+            .design__card.is-active
+                -let count=1
+                while count<=item.imgs
+                    -let alt = item.link+count
+                    .design__card__img                   
+                        img(src="./assets/img/design/"+item.link+"/Img"+count+".jpg", alt=alt)
+                        -count++ 

@@ -1,0 +1,35 @@
+.design{
+    &__nav{
+        display: flex;
+
+        &__link{
+            flex:1;
+            text-align: center;
+            background-color: $primary-color--50;
+            padding: rem(10);
+            border: 1px solid $primary-color;
+            color: inherit;
+        }
+    }
+    &__card{
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+
+        display: none;
+        &.is-active{
+            display: flex;
+            // align-items: flex-start;
+        }
+        &__img{
+            width: calc(33%-#{rem(20)});
+            margin: rem(10);
+            display: flex;   
+            background-color: $primary-color--25;
+            padding: rem(10);
+            img{
+                margin: auto;
+            }
+        }
+    }
+}

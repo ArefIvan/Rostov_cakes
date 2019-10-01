@@ -6,6 +6,7 @@ $(window).on("load",function(){
         this.arrow = $(this).find(".tasteCard__arrow")
         this.text = $(this).find(".tasteCard__dscr")
         let text = this.text
+        
         // console.log(this.arrow)
         // console.log(this.text)
         this.arrow.on("click",function(){

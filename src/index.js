@@ -6,7 +6,13 @@ import Instafeed from "instafeed.js";
 import "./blocks/header/header"
 import "./blocks/faq/faq"
 import "./blocks/tasteCard/tasteCard"
+import "./blocks/design/design"
 let slider = $(".slider--main")
+let options={
+	el:".design",
+	tabNavigationLinks:".design__nav__link",
+	tabContentContainers:".design__card"
+  }
 slider.owlCarousel({
     items:1,
     loop:true,
@@ -28,5 +34,5 @@ window.onload = function(){
 		template:'<div class="widget__img"><a target="_blank" href="{{link}}"><img src="{{image}}" /></a></div>'
 
 	});
-	feed.run();
+	feed.run();	
 };

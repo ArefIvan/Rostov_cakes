@@ -14,12 +14,10 @@
     &__card{
         display: flex;
         flex-wrap: wrap;
-        // justify-content: space-between;
 
         display: none;
         &.is-active{
             display: flex;
-            // align-items: flex-start;
         }
         &__img{
             width: calc(33%-#{rem(20)});

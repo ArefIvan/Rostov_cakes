@@ -1,28 +1,14 @@
 import './scss/main.scss';
-import $ from "jquery";
-import "owl.carousel";
-import 'owl.carousel/dist/assets/owl.carousel.css';
+
 import Instafeed from "instafeed.js";
-import "./blocks/header/header"
+// import "./blocks/header/header"
+import "./blocks/slide/slide"
 import "./blocks/faq/faq"
 import "./blocks/tasteCard/tasteCard"
 import "./blocks/design/design"
-let slider = $(".slider--main")
-let options={
-	el:".design",
-	tabNavigationLinks:".design__nav__link",
-	tabContentContainers:".design__card"
-  }
-slider.owlCarousel({
-    items:1,
-    loop:true,
-	nav:true,
-	dots:false,
-}).find(".owl-item").not(".active").find(".button").attr("tabindex","-1")
-slider.on("changed.owl.carousel").find(".active").find(".button").attr("tabindex","0")
-slider.on("changed.owl.carousel",function(){
-	console.log($(this).find(".active"))
-})
+import "./blocks/reviews/reviews"
+
+
 window.onload = function(){
 	var feed = new Instafeed({
 		target:"instafeed",

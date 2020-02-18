@@ -66,7 +66,7 @@ html(lang="ru")
                 h2.h2 Часто задаваемые вопросы
                 each val in faq
                     +faq(val.question,val.answer)
-            section.tastes
+            section.tastes#tastes
                 h2.h2 Наши вкусы
                 each val in cakes
                     +tasteCard(val,pathImgTaste)
@@ -74,5 +74,7 @@ html(lang="ru")
                 h2.h2 Каталог
             include blocks/design/design
             include blocks/reviews/reviews
+            include blocks/form-review/form-review
+
             include blocks/footer/footer
 

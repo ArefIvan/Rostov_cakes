@@ -1,6 +1,5 @@
 import $ from "jquery";
 $(window).on("load",function(){
-    let cards=$(".tasteCard")
     
     $(".tasteCard").each(function(){
         this.arrow = $(this).find(".tasteCard__arrow")

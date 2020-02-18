@@ -12,9 +12,10 @@
 @import "../blocks/tasteCard/tasteCard.scss";
 @import "../blocks/design/design.scss";
 @import "../blocks/reviews/reviews.scss";
+// @import "../blocks/form-review/form-review.scss/";
 
 html{
-    font-size:$mainFontSize;
+    font-size: $mainFontSize;
     font-family: $mainFont;
 }
 .wrapper{

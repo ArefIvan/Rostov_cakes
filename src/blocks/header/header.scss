@@ -30,6 +30,7 @@
             }
             &:active{
                 background-color: $primary-color--75;
+                color:inherit;
             }
         }
 
@@ -38,7 +39,16 @@
         font-family: $logoFont;
         user-select: none;
         &__name{
+            display: block;
+            text-decoration: none;
             font-size: rem(40);
+            color:inherit;
+            &:focus,&:hover{
+                background-color:$primary-color--25;
+            }
+            &:active{
+                background-color: $primary-color--75;
+            }
         }
         &__subname{
             margin-top: rem(-14);

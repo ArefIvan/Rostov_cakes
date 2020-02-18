@@ -1,14 +1,11 @@
-(function() {
- 
-   
-    var tabs = function(options) {
-   
+window.addEventListener("load",function(){
+  (function() {   
+    var tabs = function(options) {  
       var el = document.querySelector(options.el);
       var tabNavigationLinks = el.querySelectorAll(options.tabNavigationLinks);
       var tabContentContainers = el.querySelectorAll(options.tabContentContainers);
       var activeIndex = 0;
-      var initCalled = false;
-   
+      var initCalled = false;  
       var init = function() {
         if (!initCalled) {
           initCalled = true;
@@ -59,3 +56,4 @@ let options={
 let myTabs = tabs(options)
 myTabs.init()
 myTabs.goToTab()
+})

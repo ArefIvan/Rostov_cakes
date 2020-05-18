@@ -1,0 +1,13 @@
+include ../../components/button/button
+.subscribe
+    .subscribe__left
+        .subscribe__left__text -10%
+        .subscribe__left__background
+    .subscribe__right
+        p.subscribe__right__text
+            span Привет! Давай дружить в             
+            a.subscribe__right__link(target="_blank" rel="nofollow noopener noreferrer" title="Профиль в Instagram" href="https://www.instagram.com/polina_arefieva/").header__social__link
+               img.subscribe__right__icon(src=require("./img/svg/instagram.svg") alt="instagram-icon")
+            span Подпишись и получи свою скидку на первый заказ
+        +button(["Подписаться"],"https://www.instagram.com/polina_arefieva/")(class="subscribe__button")
+        

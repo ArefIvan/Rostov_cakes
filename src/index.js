@@ -7,6 +7,7 @@ import "./blocks/faq/faq"
 import "./blocks/tasteCard/tasteCard"
 import "./blocks/design/design"
 import "./blocks/reviews/reviews"
+import "./blocks/modal/modal"
 
 
 window.onload = function(){

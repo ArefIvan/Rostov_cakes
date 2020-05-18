@@ -12,6 +12,8 @@
 @import "../blocks/tasteCard/tasteCard.scss";
 @import "../blocks/design/design.scss";
 @import "../blocks/reviews/reviews.scss";
+@import "../blocks/modal/modal.scss";
+@import "../blocks/subscribe/subscribe.scss";
 // @import "../blocks/form-review/form-review.scss/";
 
 html{
@@ -122,4 +124,19 @@ html{
     .h2{
         margin-bottom: rem(20)
     }
+}
+.openmodal{
+        
+    @include size(rem(100));
+    position: fixed;
+    top:rem(100);
+    right:rem(30);
+    background-color: grey;
+    border-radius: 50%;
+    z-index: 400;
+    opacity: .3;
+    &:hover{
+        opacity: 1;
+    }
+
 }

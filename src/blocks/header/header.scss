@@ -25,8 +25,9 @@
             display: block;
             padding:rem(15) rem(10) 0;
             text-transform: uppercase;
+            color: inherit;
             &:focus,&:hover{
-                background-color:$primary-color--25;
+                background-color:$primary-color--50;
             }
             &:active{
                 background-color: $primary-color--75;

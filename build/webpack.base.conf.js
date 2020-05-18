@@ -114,6 +114,16 @@ module.exports = {
       template: `${PATHS.src}/index.pug`,
       filename: './index.html'
     }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: `${PATHS.src}/minicakes.pug`,
+      filename: './minicakes.html'
+    }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: `${PATHS.src}/wedding.pug`,
+      filename: './wedding.html'
+    }),
     new CopyWebpackPlugin([
      { from: `${PATHS.src}/img/`, to: `${PATHS.assets}img` },
       { from: `${PATHS.src}/static`, to: '' },

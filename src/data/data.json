@@ -163,6 +163,112 @@
         }
 
     ],
+    "minicakes":{
+        "pear":{
+            "name":"Груша-горгонзола",
+            "ingredients":[],
+            "set":"1",
+            "rate":"",
+            "price":"",
+            "img":"pear.jpg",
+            "description":"pear"
+        },
+        "Blackberry-lemon":{
+            "name":"Черная смородина-Лимон",
+            "ingredients":[],
+            "set":"1",
+            "rate":"",
+            "price":"",
+            "img":"Blackberry-lemon.jpg",
+            "description":"Blackberry-lemon"
+        },
+        "Raspberry":{
+            "name":"Малина-Фисташка",
+            "ingredients":[],
+            "set":"1",
+            "rate":"",
+            "price":"",
+            "img":"Raspberry.jpg",
+            "description":"Raspberry"
+        },
+        "Choco-Rum":{
+            "name":"Шоколадный Трюфель с Ромом",
+            "ingredients":[],
+            "set":"1",
+            "rate":"",
+            "price":"",
+            "img":"choco-Rum.jpg",
+            "description":"choco-Rum"
+        },
+        "hazelnut":{
+            "name":"Фундук",
+            "ingredients":[],
+            "set":"1",
+            "rate":"",
+            "price":"",
+            "img":"hazelnut.jpg",
+            "description":"hazelnut"
+        },
+        "Milk":{
+            "name":"Птичье Молоко",
+            "ingredients":[],
+            "set":"2",
+            "rate":"",
+            "price":"",
+            "img":"milk.jpg",
+            "description":"milk"
+        },
+        "Banan-chocolate":{
+            "name":"Банан-Молочный шоколад",
+            "ingredients":[],
+            "set":"2",
+            "rate":"",
+            "price":"",
+            "img":"Banan-chocolate.jpg",
+            "description":"Banan-chocolate"
+        },
+        "Cherry":{
+            "name":"Вишня-Фисташка",
+            "ingredients":[],
+            "set":"2",
+            "rate":"",
+            "price":"",
+            "img":"cherry.jpg",
+            "description":"cherry"
+        },
+        "two_choco":{
+            "name":"Два шоколада",
+            "ingredients":[],
+            "set":"2",
+            "rate":"",
+            "price":"",
+            "img":"two_choco.jpg",
+            "description":"two_choco"
+        },
+       
+        "Exotic":{
+            "name":"Экзотик(Кокос-Манго)",
+            "ingredients":[],
+            "set":"2",
+            "rate":"",
+            "price":"",
+            "img":"exotic.jpg",
+            "description":"exotic"
+        },
+        "surprise":{
+            "name":"Пироженое из другого набора",
+            "ingredients":[],
+            "set":"0",
+            "rate":"",
+            "price":"",
+            "img":"surprise.jpg",
+            "description":"surprise"
+        }
+        
+
+        
+
+    },
     "reveiws":[
         {
            "text":"Не первый раз заказываю здесь тортики! И каждый раз с разной начинкой и оформлением! Очень вкусные, лёгкие, съедаются на одном дыхании! Цена полностью оправдывает как вкус, так и оформление. Всем гурманам и тем,кто ещё таковыми не стал, советую, и вы (в хорошем смысле) на них подсядете!)))",

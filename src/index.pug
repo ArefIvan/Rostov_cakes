@@ -2,15 +2,23 @@ include blocks/slide/slide
 include blocks/advantage/advantage
 include blocks/faq/faq
 include blocks/tasteCard/tasteCard
+include blocks/design/design
 -let data = require("./data/data.json")
 -let cakes = data.cakes
 -let shoco = cakes.shoko
+-let catalogImg = data.design
 -let slideImgMain=require("./img/slader/slade_main.jpg")
 -let slideImg1=require("./img/slader/slade_1.jpg")
 -let slideImg2=require("./img/slader/slade_2_1.jpg")
 -let slideImg3=require("./img/slader/slade_3.jpg")
 -let slideImg4=require("./img/slader/slade_4.jpg")
 -let slideImg5=require("./img/slader/slade_5.jpg")
+-let slideMinicakes1=require("./img/slader/minicakes_1.jpg")
+-let slideMinicakes2=require("./img/slader/minicakes_2.jpg")
+-let slideMinicakes3=require("./img/slader/minicakes_3.jpg")
+
+
+-let catalogImgDir = "./assets/img/design/"
 -let basket = require("./img/advantage/basket.svg")
 -let artist = require("./img/advantage/artist.svg")
 -let scroll = require("./img/advantage/scroll.svg")
@@ -37,8 +45,11 @@ html(lang="ru")
             //- div !{shoco1}
             .slider.slider--main.owl-carousel
                 +slide([slideImgMain,"Муссовый торт"],["Муссовые торты","Ростов-на-Дону"],["Индивидуальный декор","Стильная упаковка","Бережная доставка","2000р/кг"],[["Заказать:","89286217794"],"tel:+79286217794"])
+                +slide([slideMinicakes1,"Муссовые пироженые"],["Новинка!","Ассорти пирожных","6 разных вкусов","в одной коробочке"],false,[["Заказать:","89286217794"],"tel:+79286217794"])
                 +slide([slideImg1,"Свадебный торт"],["Прекрасный","Бесконечно","вкусный","Свадебный торт","Твоей Мечты"],false,[["ПОДРОБНЕЕ"],"wedding.html"])
+                +slide([slideMinicakes2,"Муссовые пироженые"],["Новинка!","Ассорти пирожных","6 разных вкусов","в одной коробочке"],false,[["Заказать:","89286217794"],"tel:+79286217794"])     
                 +slide([slideImg2,"Детский торт"],["С заботой","О самых","Маленьких"],false,[["Заказать:","89286217794"],"tel:+79286217794"])
+                +slide([slideMinicakes3,"Муссовые пироженые"],["Новинка!","Ассорти пирожных","6 разных вкусов","в одной коробочке"],false,[["Заказать:","89286217794"],"tel:+79286217794"])                
                 +slide([slideImg3,"Мужской торт"],["нежные текстуры","Лаконичный декор","для самых","мужественных"],false,[["Заказать:","89286217794"],"tel:+79286217794"])
                 +slide([slideImg4,"Женский торт"],["всё","только","для нее"],false,[["Заказать:","89286217794"],"tel:+79286217794"])
                 +slide([slideImg5,"Шоколадная открытка"],["Шоколадные открытки","ручной работы"],false,[["Заказать:","89286217794"],"tel:+79286217794"])
@@ -72,7 +83,8 @@ html(lang="ru")
                     +tasteCard(val,pathImgTaste)
             section.catalog
                 h2.h2 Каталог
-            include blocks/design/design
+                +catalog(catalogImg,catalogImgDir)
+            
             include blocks/reviews/reviews
             include blocks/form-review/form-review
             .openmodal

@@ -1,0 +1,25 @@
+
+include blocks/slide/slide
+include blocks/design/design
+
+-let data = require("./data/data.json")
+-let catalogImg = data.minicakes
+-let catalogImgDir = "./assets/img/minicakes/"
+
+
+-let slideMinicakes1=require("./img/slader/minicakes_1.jpg")
+
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title  Муссовые пироженные от "Alice's Wonder Cakes"
+    body
+        .wrapper
+            include blocks/header/header
+            section.slider.slider--minicakes
+                +slide([slideMinicakes1,"Муссовые пироженые"],["Новинка!","Ассорти пирожных","6 разных вкусов","в одной коробочке"],false,[["Заказать:","89286217794"],"tel:+79286217794"])
+            section.catalog
+                include blocks/minicakesSet/minicakesSet

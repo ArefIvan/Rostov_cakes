@@ -9,13 +9,23 @@ include ../../components/button/button.pug
 
 header.header
     nav.header__nav
-        ul.header__nav__items
+        ul.header__nav__items.header__nav__items--global
+            li.header__nav__item
+                a(href="/").header__nav__link Главная
+            li.header__nav__item
+                a(href="/minicakes.html").header__nav__link Пироженые
+            li.header__nav__item
+                a(href="/wedding.html").header__nav__link Свадебные торты
+        ul.header__nav__items.header__nav__items--page
+
             li.header__nav__item
                 a(href="/#tastes").header__nav__link Вкусы
             li.header__nav__item
                 a(href="/#faq").header__nav__link Вопросы
             li.header__nav__item
                 a(href="/#reviews").header__nav__link Отзывы
+
+
     .header__social
         ul.header__social__items
             li.header__social__item 

@@ -1,3 +1,4 @@
+
 @import "utils/vars.scss";
 @import "utils/mixins.scss";
 @import "utils/fonts.scss";
@@ -14,6 +15,11 @@
 @import "../blocks/reviews/reviews.scss";
 @import "../blocks/modal/modal.scss";
 @import "../blocks/subscribe/subscribe.scss";
+
+@import "minicakes.scss";
+@import "wedding.scss";
+
+
 // @import "../blocks/form-review/form-review.scss/";
 
 html{

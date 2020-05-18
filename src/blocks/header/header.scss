@@ -12,18 +12,20 @@
         margin:0 rem(20);
     }
     &__nav{
-
+        display: flex;
+        flex-direction: column;
         width: 50%;
         @media screen and (max-width:$tableWidth)  {
             font-size: rem(12);
         }
         &__items{
+            width: 100%;
             display: flex;
 
         }
         &__link{
             display: block;
-            padding:rem(15) rem(10) 0;
+            padding:rem(7) rem(10) ;
             text-transform: uppercase;
             color: inherit;
             &:focus,&:hover{

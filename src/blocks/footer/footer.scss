@@ -1,5 +1,8 @@
 .footer{
     display: flex;
+    @media screen and (max-width:$phoneWidth)  {
+        flex-direction: column;;
+     }
     min-height: rem(100);
     justify-content: space-between;
     padding: rem(20);
@@ -46,6 +49,9 @@
         }
     }
     .button{
+        @media screen and (max-width:$phoneWidth)  {
+            margin-right: rem(5);
+         }
         margin-right: rem(50)
     }
 }

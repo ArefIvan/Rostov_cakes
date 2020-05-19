@@ -1,9 +1,15 @@
 .design{
     &__nav{
         display: flex;
+        @media screen and (max-width:$phoneWidth  )  {
+            flex-wrap: wrap;
+         }
 
         &__link{
             flex:1;
+            @media screen and (max-width:$phoneWidth  )  {
+                flex:1 30%;
+             } 
             text-align: center;
             background-color: $primary-color--50;
             padding: rem(10);

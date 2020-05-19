@@ -134,11 +134,15 @@ html{
 .openmodal{
         
     @include size(rem(100));
-    @media screen and (max-width:$tableWidth) {
-        @include size(rem(60))
+
+    @media screen and (max-width:$smDesktopWidth  )  {
+        @include size(rem(60));
+        // top:inherit;
+        // bottom: 50%;
     }
     position: fixed;
-    top:rem(100);
+    top:25%;
+    
     right:rem(30);
     background-color: grey;
     border-radius: 50%;

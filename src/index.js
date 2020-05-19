@@ -9,6 +9,7 @@ import "./blocks/design/design"
 import "./blocks/reviews/reviews"
 import "./blocks/modal/modal"
 import "./blocks/minicakesSet/miinicakes"
+import "./js/jquery.fittext"
 
 
 window.onload = function(){
@@ -25,4 +26,12 @@ window.onload = function(){
 	console.log(feed)
 	feed.run();	
 };
+
+let wdgcrdList= $(".weddingCard__text")
+
+wdgcrdList.each(function(){
+	$(this).fitText(
+		1.2
+	)
+})
 

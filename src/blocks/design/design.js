@@ -2,6 +2,7 @@ window.addEventListener("load",function(){
   (function() {   
     var tabs = function(options) {  
       var el = document.querySelector(options.el);
+      if(el==null){return}
       var tabNavigationLinks = el.querySelectorAll(options.tabNavigationLinks);
       var tabContentContainers = el.querySelectorAll(options.tabContentContainers);
       var activeIndex = 0;
@@ -54,6 +55,7 @@ let options={
   tabContentContainers:".design__card"
 }
 let myTabs = tabs(options)
+if (myTabs==undefined){return}
 myTabs.init()
 myTabs.goToTab()
 })

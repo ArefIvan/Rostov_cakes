@@ -1,3 +1,13 @@
+include blocks/weddingCard/weddingCard
+-let data = require("./data/data.json")
+-let wd = data.weddingCards
+-let pathImgWedCrds= "./assets/img/"
+
+
+
+
+
+
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -7,3 +17,8 @@ html(lang="en")
     body
         .wrapper
             include blocks/header/header
+            section.weddingCards
+                h2.weddingCards__title.h2 Свадебные торты
+                each val in wd
+                    +weddingCard(val,pathImgWedCrds)
+            include blocks/footer/footer

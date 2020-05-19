@@ -1,0 +1,10 @@
+mixin weddingCard(data,pathImg)
+    -let img = pathImg+data.img
+    //- -let alt = data.img.split(".")[0]
+    .weddingCard    
+        .weddingCard__img.weddingCard__item
+            img(src=img)
+        .weddingCard__item.weddingCard__content
+            img(src=img).weddingCard__content__background 
+            .weddingCard__text !{data.text}
+            

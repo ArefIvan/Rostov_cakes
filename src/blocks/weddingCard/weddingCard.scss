@@ -1,0 +1,38 @@
+.weddingCard{
+    display: flex;
+    &__item{
+        flex:1 50%;
+    }
+    &__img{
+        
+            img{
+                width: 100%;
+                height: auto;
+            }
+
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &__background{
+            position: absolute;
+            width: 100%;
+            height: auto;
+            top:0;
+            right: 0;
+            opacity: 0.15;
+        }
+    }
+    &__text{
+        width: 90%;
+        font-size: rem(30);
+        text-align: center;
+        // padding:;
+        position: relative;
+        
+
+        
+    }
+}

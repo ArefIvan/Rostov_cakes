@@ -1,6 +1,7 @@
 window.addEventListener("load",function(){
-    let scrollbar =  document.body.clientWidth - window.innerWidth + 'px';
+    // let scrollbar =  document.body.clientWidth - window.innerWidth + 'px';
     let open = document.querySelector('.openmodal')
+    if(!open){return}
     let modal = document.querySelector('.modal')
     let close = document.querySelector('.modal__close')
     let body = document.querySelector('body')

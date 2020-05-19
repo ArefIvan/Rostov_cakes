@@ -9,22 +9,24 @@ include ../../components/counter/counter
         each val in minicakes
             if val.set=="1"
                 +tasteCard(val,"./assets/img/minicakes/")
-        +tasteCard(minicakes.surprise,"./assets/img/minicakes/")
+        +tasteCard(minicakes.gift,"./assets/img/minicakes/")
         .minicakesSet__calc
-            .minicakesSet__calc__item Вес <span class="minicakesSet__calc__weight">500</span> гр
+            .minicakesSet__calc__item Вес набора <span class="minicakesSet__calc__weight">500</span> гр
             .minicakesSet__calc__item
-                +counter("","sets","0","10","0")
+                //- +counter("","sets","1","10","0")
 
-            .minicakesSet__calc__item На <span class="minicakesSet__calc__price">1000</span> руб.
+            .minicakesSet__calc__item Стоимость <span class="minicakesSet__calc__price">1000</span> руб.
     .design__card
         each val in minicakes
             if val.set=="2"
                 +tasteCard(val,"./assets/img/minicakes/")
-        +tasteCard(minicakes.surprise,"./assets/img/minicakes/")
+        +tasteCard(minicakes.gift,"./assets/img/minicakes/")
         .minicakesSet__calc
-            .minicakesSet__counter__weight
-            .minicakesSet__counter__counter
-            .minicakesSet__counter__price
+            .minicakesSet__calc__item Вес набора <span class="minicakesSet__calc__weight">500</span> гр
+            .minicakesSet__calc__item
+                //- +counter("","sets","1","10","0")
+
+            .minicakesSet__calc__item Стоимость <span class="minicakesSet__calc__price">1000</span> руб.
 
 
             

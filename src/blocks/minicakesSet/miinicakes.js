@@ -1,5 +1,5 @@
 import counter from "../../components/counter/counter"
-console.log($(".minicakesSet__calc").find(".minicakesSet__calc__weight"))
+
 // let count = $(".counter__count")
 function miniCakesCalc(el){
     let count = el.find(".counter__count")
@@ -36,4 +36,7 @@ function miniCakesCalc(el){
 }
 
 let calc = $(".minicakesSet__calc")
-miniCakesCalc(calc)
+
+calc.each(function(){
+    miniCakesCalc($(this))
+})

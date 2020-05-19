@@ -255,14 +255,14 @@
             "img":"exotic.jpg",
             "description":"exotic"
         },
-        "surprise":{
-            "name":"Пироженое из другого набора",
+        "gift":{
+            "name":"Пироженое из другого набора в подарок!",
             "ingredients":[],
             "set":"0",
             "rate":"",
             "price":"",
-            "img":"surprise.jpg",
-            "description":"surprise"
+            "img":"gift.jpg",
+            "description":"gift"
         }
         
 

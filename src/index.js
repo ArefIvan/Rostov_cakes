@@ -8,6 +8,7 @@ import "./blocks/tasteCard/tasteCard"
 import "./blocks/design/design"
 import "./blocks/reviews/reviews"
 import "./blocks/modal/modal"
+import "./blocks/minicakesSet/miinicakes"
 
 
 window.onload = function(){
@@ -23,3 +24,4 @@ window.onload = function(){
 	});
 	feed.run();	
 };
+

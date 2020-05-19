@@ -1,0 +1,9 @@
+mixin counter(title,name,min='0',max='10' ,value)
+    - value = value?value:min
+    .counter
+        .h3.counter__title= title
+        .counter__wrap
+            button.counter__button.dec -
+            input.h3.counter__count(type='text' name=name value=value data-min=min data-max=max)
+            button.counter__button.inc +
+

@@ -9,8 +9,8 @@ window.addEventListener("load",function(){
         e.preventDefault()
         document.body.style.overflow = 'hidden';
         modal.classList.add('modal-show')
-        modal.style.marginLeft = scrollbar;
-        body.style.marginLeft = scrollbar;
+        // modal.style.marginLeft = scrollbar;
+        // body.style.marginLeft = scrollbar;
         open.style.display="none";
       });
       close.addEventListener('click',function(e){

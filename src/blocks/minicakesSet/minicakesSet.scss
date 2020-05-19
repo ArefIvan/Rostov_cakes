@@ -4,4 +4,12 @@
         height: 100%;
         opacity: 0;
     }
+    &__calc{
+        width: 100%;
+        text-align: center;
+        font-size: rem(30);
+        &__item{
+            margin: rem(10) auto;
+        }
+    }
 }

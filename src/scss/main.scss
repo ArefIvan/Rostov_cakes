@@ -134,6 +134,9 @@ html{
 .openmodal{
         
     @include size(rem(100));
+    @media screen and (max-width:$tableWidth) {
+        @include size(rem(60))
+    }
     position: fixed;
     top:rem(100);
     right:rem(30);

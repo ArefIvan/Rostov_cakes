@@ -1,0 +1,35 @@
+.counter{
+    width: 100%;
+    // height: 30px;
+    margin-top:rem(10);
+    display: flex;
+    justify-content: space-between;
+      
+
+
+    &__title{
+        // width: 50%;
+        line-height: rem(30px) !important;
+    }
+    &__wrap{
+        display: flex;
+    }
+    &__count{
+        @include  size(rem(30px));
+        text-align: center;
+        user-select: none;
+        
+    }
+    &__button{
+        @include size(rem(30px));
+        border:1px solid #{$primary-color--25};
+        border-radius: 50%;
+        text-align: center;
+        background-color: white;
+        // cursor: pointer;
+        // user-select: none;
+        &:disabled{
+            color:$primary-color--25;
+        }
+    }
+}

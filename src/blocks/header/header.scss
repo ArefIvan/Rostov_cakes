@@ -11,6 +11,10 @@
     @media screen and (max-width:$tableWidth)  {
         margin:0 rem(20);
     }
+    @media screen and (max-width:$phoneWidth )  {
+        margin:0;
+        flex-direction: column;
+    }
     &__nav{
         display: flex;
         flex-direction: column;
@@ -18,9 +22,15 @@
         @media screen and (max-width:$tableWidth)  {
             font-size: rem(12);
         }
+        @media screen and (max-width:$phoneWidth )  {
+            width: 100%;
+        }
         &__items{
             width: 100%;
             display: flex;
+            @media screen and (max-width:$phoneWidth )  {
+                justify-content: space-around;
+            }
 
         }
         &__link{
@@ -61,6 +71,9 @@
     }
     &__social{
         width: 50%;
+        @media screen and (max-width:$phoneWidth )  {
+            width: 100%;
+        }
         &__items{
             display: flex;
             justify-content: flex-end;

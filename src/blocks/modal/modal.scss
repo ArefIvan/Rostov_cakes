@@ -1,4 +1,7 @@
 .modal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
     position: fixed;
     top:0;
     bottom: 0;
@@ -9,6 +12,7 @@
     opacity: 0;
     transition: opacity 600ms ease-in;
     pointer-events: none;
+
      
     &.modal-show{
         opacity: 1;
@@ -16,12 +20,12 @@
         // overflow-y: auto;
     }
     &__dialog{
-        width: rem(600);
+        
         @media screen and (max-width:$tableWidth)  {
-            width: rem(400);
+
         }
         position: relative;
-        margin: rem(50) auto;
+        margin:auto;
     }
     &__content{
         position: relative;
@@ -37,5 +41,8 @@
     }
     &__body{
         padding: rem(20);
+        @media screen and (max-width:$tableWidth)  {
+           padding: rem(10);
+        }
     }
 }

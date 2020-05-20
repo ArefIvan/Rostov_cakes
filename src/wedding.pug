@@ -21,4 +21,9 @@ html(lang="en")
                 h2.weddingCards__title.h2 Свадебные торты
                 each val in wd
                     +weddingCard(val,pathImgWedCrds)
+            .openmodal
+                img(src=require("./img/svg/cheesecake.svg"), alt="subcribe")
+            include blocks/modal/modal
+                block content
+                    include blocks/subscribe/subscribe
             include blocks/footer/footer

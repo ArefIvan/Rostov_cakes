@@ -1,6 +1,12 @@
 .subscribe{
     display: flex;
     min-height: 50vh;
+    @media screen and (max-width:$tableWidth)  {
+        min-height: 30vh;
+    }
+    @media screen and (max-width:$phoneWidth)  {
+        min-height: auto;
+    }
     &__left{
         position: relative;
         width: 50%;

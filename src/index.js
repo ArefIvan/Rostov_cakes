@@ -29,9 +29,12 @@ window.onload = function(){
 
 let wdgcrdList= $(".weddingCard__text")
 
+
 wdgcrdList.each(function(){
 	$(this).fitText(
 		1.2
 	)
 })
+
+
 

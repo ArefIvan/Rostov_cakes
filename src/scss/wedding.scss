@@ -3,9 +3,12 @@
     max-width: rem(800);
     margin: rem(40) auto;
     .h2{
+
         font-size: rem(40);
         text-transform: unset;
-        
+        @media screen and (max-width:$phoneWidth  ){
+            font-size: rem(30);
+        }
     }
     
     .weddingCard{

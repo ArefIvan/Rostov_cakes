@@ -23,7 +23,6 @@ window.onload = function(){
 		template:'<div class="widget__img"><a target="_blank" href="{{link}}"><img src="{{image}}" /></a></div>'
 
 	});
-	console.log(feed)
 	feed.run();	
 };
 
@@ -35,6 +34,9 @@ wdgcrdList.each(function(){
 		1.2
 	)
 })
+fetch('.')
+  .then(response => response.json())
+  .then(json => console.log(json))
 
 
 

@@ -9,8 +9,8 @@ mixin button(title,url)
 
     else
         if title[1]
-            button.button            
+            button.button&attributes(attributes)            
                 span.button__subtitle=title[0]
                 span.button__title=title[1]
         else
-            button.button=title
+            button.button&attributes(attributes)=title

@@ -27,7 +27,8 @@ html(lang="en")
                     +weddingCard(val,pathImgWedCrds)
                     if val.name=="weight"
                         +button(["Расчитать вес торта"])(class="weddingCards__button--weight openmodal modal--weight")
-            +modal
+            +modal("modal--weight")
+                include blocks/weightCalc/weightCalc
                     
             .openmodal(class="modal--subscribe")
                 img(src=require("./img/svg/cheesecake.svg"), alt="subcribe")

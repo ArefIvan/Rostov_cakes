@@ -8,7 +8,7 @@ import "./blocks/tasteCard/tasteCard"
 import "./blocks/design/design"
 import "./blocks/reviews/reviews"
 import "./blocks/modal/modal"
-import "./blocks/minicakesSet/miinicakes"
+import "./blocks/weightCalc/weightCalc"
 import "./js/jquery.fittext"
 
 
@@ -34,9 +34,7 @@ wdgcrdList.each(function(){
 		1.2
 	)
 })
-fetch('.')
-  .then(response => response.json())
-  .then(json => console.log(json))
+
 
 
 

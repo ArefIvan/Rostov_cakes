@@ -43,4 +43,5 @@ window.addEventListener("load",function(){
 
     }
     modal(".modal--subscribe")
+    modal(".modal--weight")
 })

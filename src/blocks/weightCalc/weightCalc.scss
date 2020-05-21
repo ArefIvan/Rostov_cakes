@@ -1,0 +1,20 @@
+.weightCalc{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 50vw;
+    min-height: rem(200);
+
+    
+    &__text{
+        font-size: rem(30);
+        text-align: center;
+        margin: rem(20) auto;
+    }
+    & .counter__title,.counter__count{
+        margin: rem(3) auto;
+     font-family: $mainFont;
+    }
+}

@@ -26,7 +26,9 @@ html(lang="en")
                 each val in wd
                     +weddingCard(val,pathImgWedCrds)
                     if val.name=="weight"
-                        +button(["Расчитать вес торта"])(class="weddingCards__button--weight openmodal modal--weight")
+                        +button(["Расчитать вес торта"])(class="weddingCards__button weddingCards__button--weight openmodal modal--weight")
+                    if val.name=="taste"
+                        +button(["Популярные начинки"],"/#tastes")(class="weddingCards__button")
             +modal("modal--weight")
                 include blocks/weightCalc/weightCalc
                     

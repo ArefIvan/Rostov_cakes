@@ -3,9 +3,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+     
 
     max-width: rem(800);
     margin: rem(40) auto;
+
     .h2{
 
         font-size: rem(40);
@@ -14,11 +16,16 @@
             font-size: rem(30);
         }
     }
-    &__button--weight{
+    &__button{
         margin-top: rem(10);
         align-self: flex-end;
     }
     .weddingCard{
         margin-top: rem(20);
+        
+        &:nth-child(2){
+            margin-bottom: rem(30);
+        }
+   
     }
 }

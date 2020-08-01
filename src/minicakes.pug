@@ -18,13 +18,16 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title  Муссовые пироженные от "Alice's Wonder Cakes"
+        meta(name="description", content="Муссовые десерты на заказ в Ростове-на-Дону с доставкой на дом. Продажа муссовых пирожных от кондитерской «Alise's wonder cakes» в Ростове.")
+        meta(name="keywords", content="заказать пирожное, подарок на день рождения, Муссовые пирожные")
+        meta(name="language" content="Russian" )
+        title  Муссовые пироженые от "Alice's Wonder Cakes"
     body
         .wrapper
             include blocks/header/header
-            section.slider.slider--minicakes
-                +slide([slideMinicakes1,"Муссовые пироженые"],["Новинка!","Ассорти пирожных","6 разных вкусов","в одной коробочке"],false,[["Заказать:","89286217794"],"tel:+79286217794"])
-            section.catalog
+            .slider.slider--minicakes
+                +slide([slideMinicakes1,"Муссовые пирожные"],["Новинка!","Ассорти пирожных","6 разных вкусов","в одной коробочке"],false,[["Заказать:","89286217794"],"tel:+79286217794"])
+            .catalog
                 include blocks/minicakesSet/minicakesSet
                 
             .openmodal(class="modal--subscribe")
